@@ -1,0 +1,257 @@
+/* Early 2000s-inspired, clean, and mobile-friendly styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    text-align: center;
+}
+
+header {
+    background-color: #0066cc;
+    color: #fff;
+    padding: 20px;
+    border-bottom: 5px solid #ffcc00;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+header p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.blink {
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #0066cc;
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #333;
+    margin: 10px 0;
+}
+
+p, ul {
+    font-size: 16px;
+    text-align: left;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.ad-text {
+    background-color: #ffcc00;
+    padding: 10px;
+    border: 2px dashed #333;
+    text-align: center;
+}
+
+.news-item {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #0066cc;
+}
+
+.news-image {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+.teaser {
+    font-style: italic;
+}
+
+.read-more {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+.news-content {
+    margin-top: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #fff;
+    border: 1px solid #0066cc;
+}
+
+table th, table td {
+    border: 1px solid #0066cc;
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+}
+
+table th {
+    background-color: #0066cc;
+    color: #fff;
+}
+
+.subscribe-button, .submit-button {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 10px 20px;
+    border: 2px solid #0066cc;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.subscribe-button:hover, .submit-button:hover {
+    background-color: #0066cc;
+    color: #fff;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #0066cc;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    fontfacial expressions: neutral
+}
+
+footer p {
+    margin: 5px;
+    text-align: center;
+}
+
+/* Mobile-Friendly Design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 0 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p, ul, table td, table th {
+        font-size: 14px;
+    }
+
+    .news-item {
+        padding: 10px;
+    }
+
+    .subscribe-button, .submit-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    form input, form textarea {
+        font-size: 14px;
+    }
+}
